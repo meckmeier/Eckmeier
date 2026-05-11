@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mary Eckmeier | Naturalist Work & Community Projects</title>
+  <link href="mystyles.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+ 
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand">Mary Eckmeier</div>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#triathlon">Triathlon</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Naturalist · Data Builder · Community Volunteer</div>
+      <h1>Bide-a-While</h1>
+      <p>
+        I’m Mary Eckmeier. This site is a small hub for my Master Naturalist work,
+        community projects, local discoveries, and current fundraising efforts.
+      </p>
+      <div class="button-row">
+        <a class="button" href="#work">Explore my work</a>
+        <a class="button secondary" href="#triathlon">Support my YMCA triathlon</a>
+        <a class="button secondary" href="#restaurants">Explore local restaurants</a>
+      </div>
+
+    </div>
+
+    <aside class="portrait-card" aria-label="Profile photo placeholder">
+      
+        <img src="logo.jpg" width="400">
+      
+    </aside>
+  </section>
+
+  <main>
+    <section id="work" class="section-card">
+      <h2>Master Naturalist work</h2>
+      <p>
+        I’m building tools and community connections that help Wisconsin Master Naturalists
+        find meaningful volunteer opportunities, trainings, and conservation organizations.
+      </p>
+
+      <div class="grid">
+        <article class="mini-card">
+          <h3>WildPaths Wisconsin</h3>
+          <p>A volunteer and training discovery hub for nature-based organizations.</p>
+          <a href="https://wildpathswi.org">Visit project</a>
+        </article>
+
+        <article class="mini-card">
+          <h3>Volunteer data work</h3>
+          <p>Organizing opportunities by region, county, activity type, and naturalist interests.</p>
+          <a href="mailto:mary@eckmeier.com">Contact Mary</a>
+        </article>
+
+        <article class="mini-card">
+          <h3>Field learning</h3>
+          <p>Water monitoring, citizen science, local ecology, and practical stewardship.</p>
+          <a href="https://wildpathswi.org">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="triathlon" class="donation-box">
+      <div>
+        <h2>YMCA triathlon fundraiser</h2>
+        <p>
+          I’m participating in a YMCA triathlon fundraiser. Donations support local programs
+          that help people stay active, connected, and healthy.
+        </p>
+      </div>
+      <a class="button" href="https://raceroster.com/events/2026/108167/ywca-minneapolis-womens-triathlon/pledge/participant/41050923?edit=1">Donate</a>
+    </section>
+
+    <section id="restaurants" class="section-card">
+    <h2>Restaurants I like</h2>
+
+    <div class="restaurant-feature">
+        <div id="restaurant-map"></div>
+
+        <div id="selected-restaurant">
+        <p>Click a restaurant marker or list item to see details here.</p>
+        </div>
+    </div>
+
+    <h3>Full restaurant list</h3>
+    <div id="restaurant-list" class="restaurant-list"></div>
+    </section>
+
+      
+
+    <section id="contact" class="section-card">
+      <h2>Contact</h2>
+      <p>
+        Want to connect about Wisconsin naturalist work, volunteer data, or local conservation projects?
+      </p>
+      <p>
+        <a href="mailto:YOUR-EMAIL-HERE">Email Mary</a>
+        ·
+        <a href="https://YOUR-LINKEDIN-OR-PROFILE-LINK-HERE">Profile link</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Mary Eckmeier · Built as a simple static HTML/CSS hub.</p>
+  </footer>
+</body>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="myrestaurants.js"></script>
+
+</html>

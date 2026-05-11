@@ -1,0 +1,373 @@
+:root {
+  --green-dark: #2f5d50;
+  --green: #4f7f68;
+  --green-soft: #e8f1ec;
+  --cream: #fbf7ef;
+  --gold: #c49a45;
+  --ink: #23312b;
+  --muted: #66736d;
+  --border: #d9dfda;
+  --white: #ffffff;
+  --shadow: 0 12px 30px rgba(35, 49, 43, 0.12);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--cream), #ffffff 40%);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--green-dark);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #1f4037;
+}
+
+/* Header */
+
+.site-header {
+  background: var(--green-dark);
+  color: var(--white);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.nav-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.92rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+}
+
+nav a:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Layout */
+
+main,
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 4rem 1rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+main {
+  padding: 0 1rem 4rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+.section-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+/* Typography */
+
+.eyebrow {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--green-dark);
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5vw, 4.8rem);
+  line-height: 1;
+  margin: 0 0 1rem;
+  color: var(--green-dark);
+}
+
+h2 {
+  color: var(--green-dark);
+  font-size: 2rem;
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 680px;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.button {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  border: 2px solid var(--green-dark);
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+.button:hover {
+  color: var(--white);
+  background: #21443a;
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--green-dark);
+}
+
+.button.secondary:hover {
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+/* Profile card */
+
+.portrait-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.portrait-placeholder {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 30%, #ffffff 0 8%, transparent 9%),
+    linear-gradient(135deg, var(--green-soft), #d6e5dc);
+  display: grid;
+  place-items: center;
+  color: var(--green-dark);
+  text-align: center;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Work cards */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.mini-card {
+  background: var(--green-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.mini-card h3 {
+  margin: 0 0 0.4rem;
+  color: var(--green-dark);
+  line-height: 1.2;
+}
+
+.mini-card p {
+  margin: 0 0 0.65rem;
+}
+
+/* Donation */
+
+.donation-box {
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.donation-box h2,
+.donation-box p {
+  color: var(--white);
+  margin-top: 0;
+}
+
+.donation-box .button {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #1f2b25;
+  white-space: nowrap;
+}
+
+/* Restaurants: map + list side by side */
+
+.restaurant-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+#restaurant-map {
+  min-height: 500px;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+#selected-restaurant {
+  border: 2px solid var(--green-dark);
+  border-radius: 14px;
+  background: var(--green-soft);
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.restaurant-item {
+  cursor: pointer;
+}
+
+.restaurant-item.active-restaurant {
+  border: 2px solid var(--green-dark);
+  background: var(--green-soft);
+}
+
+
+.tag {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  background: var(--green-soft);
+  color: var(--green-dark);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  margin-top: 0.35rem;
+}
+
+/* Leaflet popup cleanup */
+
+.leaflet-popup-content {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.leaflet-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Footer */
+
+footer {
+  background: var(--green-dark);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+footer a {
+  color: var(--white);
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .hero,
+  .restaurant-layout,
+   .restaurant-list {
+    grid-template-columns: 1fr;
+  }
+
+  .donation-box {
+    grid-template-columns: 1fr;
+  }
+
+  #restaurant-map {
+    height: 400px;
+    position: static;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  .nav-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
