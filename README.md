@@ -1,1 +1,1 @@
-my eckmeier site page.
+I'm building a github pages site that will be my main site on the internet once i figure out how to address the eckmeier.com thing.
