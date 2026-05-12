@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mary Eckmeier | Naturalist Work & Community Projects</title>
+  <link href="mystyles.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+ 
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand">Mary Eckmeier</div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Back to Profile</a>
+        <a href="restaurants.html">Restaurants</a>
+
+
+      </nav>
+    </div>
+  </header>
+
+  <section id="restaurants" class="section-card">
+    <h2>Restaurants I like</h2>
+
+    <div class="restaurant-feature">
+        <div id="restaurant-map"></div>
+
+        <div id="selected-restaurant">
+        <p>Click a restaurant marker or list item to see details here.</p>
+        </div>
+    </div>
+
+    <h3>Full restaurant list</h3>
+    <div id="restaurant-list" class="restaurant-list"></div>
+    </section>
+
+      </body>
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="myrestaurants.js"></script>
+</html>
